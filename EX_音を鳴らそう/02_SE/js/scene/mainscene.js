@@ -67,6 +67,8 @@
                 heart.interaction.enabled = true;           // ヒット判定フラグをON
                 heart.interaction.boundingType = "circle";  // 円形のヒット判定を行う
                 heart.addEventListener("pointingend", function() {
+                    // 音を出す
+                    tm.sound.SoundManager.get("se").clone().play();
                     // 消す
                     this.remove();
                 });
