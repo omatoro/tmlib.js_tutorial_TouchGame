@@ -78,6 +78,11 @@
 
             // 制限時間
             this.limitTime = LIMIT_TIME;
+
+            // BGM再生
+            this.bgm = tm.assetManager.get("bgm");
+            this.bgm.loop = true;
+            this.bgm.play();
         },
 
         update: function (app) {
@@ -89,11 +94,13 @@
 
             // 制限時間がなくなったらEndSceneに遷移する
             if (this.limitTime <= 0) {
+                this.bgm.stop();
                 app.replaceScene(ns.EndScene(0));
             }
 
             // ハートが全部なくなったらEndSceneに遷移する
             if (this.heartGroup.children.length <= 0) {
+                this.bgm.stop();
                 app.replaceScene(ns.EndScene(this.limitTime));
             }
         },
