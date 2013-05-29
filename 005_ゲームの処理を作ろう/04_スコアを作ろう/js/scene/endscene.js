@@ -22,7 +22,7 @@
 
     var RESULT_PARAM = {
             score: 256,
-            msg:      "【WEBack制作チュートリアル】",
+            msg:      "【タッチゲーム制作チュートリアル】",
             hashtags: ["omatoro", "tmlibチュートリアル"],
             url:      "http://testcording.com",
             width:    ns.SCREEN_WIDTH,

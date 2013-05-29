@@ -8,7 +8,7 @@
 
         init : function() {
             this.superInit({
-                title :  "WEBack制作チュートリアル",
+                title :  "タッチゲーム制作チュートリアル",
                 width :  ns.SCREEN_WIDTH,
                 height : ns.SCREEN_HEIGHT
             });
