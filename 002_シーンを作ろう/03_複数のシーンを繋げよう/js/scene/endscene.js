@@ -10,7 +10,7 @@
             url:      "http://testcording.com",
             width:    ns.SCREEN_WIDTH,
             height:   ns.SCREEN_HEIGHT,
-            related:  "tmlib.js testcording",
+            related:  "tmlib.js Tutorial testcording",
     };
 
     ns.EndScene = tm.createClass({
